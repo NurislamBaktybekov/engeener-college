@@ -1,0 +1,421 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Life | Engineering College</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+                ENGINEERING<span>COLLEGE</span>
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="admissions.html">Admissions</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="student-life.html"
+                            aria-current="page">Student Life</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+                <a href="registration.html" class="btn btn-primary ms-lg-3">
+                    Apply Now
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+
+            <p class="section-label">LIFE BEYOND CLASSROOMS</p>
+
+            <h1>Student <span>Life</span></h1>
+
+            <p>Discover new opportunities, meet people and create memories.</p>
+
+        </div>
+    </header>
+
+
+    <!-- Introduction -->
+    <section class="about-section">
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-7">
+
+                    <p class="section-label">CAMPUS EXPERIENCE</p>
+
+                    <h2>More Than Just Education</h2>
+
+                    <p>
+                        Student life at Engineering College is about
+                        discovering new interests, developing leadership
+                        skills and building meaningful connections.
+                    </p>
+
+                    <p>
+                        Students can participate in technical clubs,
+                        creative activities, competitions and campus events.
+                        Every experience is an opportunity to grow.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-5">
+
+                    <div class="info-card">
+                        <h3>Make Every Day Count</h3>
+
+                        <p>
+                            Learn together, share ideas and turn
+                            your ambitions into real projects.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- News and Events -->
+    <section class="features-section">
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <p class="section-label">LATEST UPDATES</p>
+
+                <h2>Campus News & Events</h2>
+
+                <p>Explore activities and announcements from our campus.</p>
+
+            </div>
+
+
+            <!-- Category Filters -->
+            <div class="filter-controls text-center mb-5"
+                id="newsFilters" hidden>
+
+                <button class="filter-btn active"
+                    type="button"
+                    data-filter="all"
+                    aria-pressed="true">
+                    All
+                </button>
+
+                <button class="filter-btn"
+                    type="button"
+                    data-filter="events"
+                    aria-pressed="false">
+                    Events
+                </button>
+
+                <button class="filter-btn"
+                    type="button"
+                    data-filter="technology"
+                    aria-pressed="false">
+                    Technology
+                </button>
+
+                <button class="filter-btn"
+                    type="button"
+                    data-filter="campus"
+                    aria-pressed="false">
+                    Campus
+                </button>
+
+            </div>
+
+
+            <!-- News Cards -->
+            <div class="row g-4" id="newsContainer">
+
+                <div class="col-md-6 col-lg-4 news-item"
+                    data-category="events">
+
+                    <article class="news-card">
+
+                        <div class="news-visual visual-blue">
+                            <span>EVENT 01</span>
+                        </div>
+
+                        <div class="news-content">
+
+                            <span class="news-category">EVENTS</span>
+
+                            <h3>Annual Engineering Challenge</h3>
+
+                            <p>
+                                Students present their engineering
+                                ideas and compete in a creative
+                                problem-solving challenge.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 news-item"
+                    data-category="technology">
+
+                    <article class="news-card">
+
+                        <div class="news-visual visual-cyan">
+                            <span>TECH 02</span>
+                        </div>
+
+                        <div class="news-content">
+
+                            <span class="news-category">TECHNOLOGY</span>
+
+                            <h3>Introduction to Artificial Intelligence</h3>
+
+                            <p>
+                                An educational workshop introducing
+                                students to artificial intelligence
+                                and modern digital technologies.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 news-item"
+                    data-category="campus">
+
+                    <article class="news-card">
+
+                        <div class="news-visual visual-purple">
+                            <span>CAMPUS 03</span>
+                        </div>
+
+                        <div class="news-content">
+
+                            <span class="news-category">CAMPUS</span>
+
+                            <h3>Welcome to Student Community</h3>
+
+                            <p>
+                                New students meet their classmates,
+                                discover campus facilities and
+                                learn about student opportunities.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 news-item"
+                    data-category="events">
+
+                    <article class="news-card">
+
+                        <div class="news-visual visual-cyan">
+                            <span>EVENT 04</span>
+                        </div>
+
+                        <div class="news-content">
+
+                            <span class="news-category">EVENTS</span>
+
+                            <h3>Student Innovation Day</h3>
+
+                            <p>
+                                A day dedicated to student projects,
+                                creative ideas and innovative solutions.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 news-item"
+                    data-category="technology">
+
+                    <article class="news-card">
+
+                        <div class="news-visual visual-purple">
+                            <span>TECH 05</span>
+                        </div>
+
+                        <div class="news-content">
+
+                            <span class="news-category">TECHNOLOGY</span>
+
+                            <h3>Cyber Security Workshop</h3>
+
+                            <p>
+                                Discover the fundamentals of digital
+                                security and responsible technology use.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 news-item"
+                    data-category="campus">
+
+                    <article class="news-card">
+
+                        <div class="news-visual visual-blue">
+                            <span>CAMPUS 06</span>
+                        </div>
+
+                        <div class="news-content">
+
+                            <span class="news-category">CAMPUS</span>
+
+                            <h3>Student Collaboration</h3>
+
+                            <p>
+                                Students work together, exchange
+                                knowledge and develop teamwork skills.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+            <p class="text-center mt-4" id="filterStatus"
+                aria-live="polite"></p>
+
+        </div>
+    </section>
+
+
+    <!-- Student Clubs -->
+    <section class="about-section">
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <p class="section-label">GET INVOLVED</p>
+
+                <h2>Student Clubs</h2>
+
+                <p>Find your community and develop your interests.</p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <h3>01</h3>
+                        <h4>Coding Club</h4>
+                        <p>
+                            Practice programming, explore new
+                            technologies and develop projects together.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <h3>02</h3>
+                        <h4>Robotics Club</h4>
+                        <p>
+                            Explore robotics, electronics and
+                            creative engineering projects.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <h3>03</h3>
+                        <h4>Cyber Security Club</h4>
+                        <p>
+                            Learn about network protection,
+                            information security and digital safety.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>© 2026 Engineering College. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

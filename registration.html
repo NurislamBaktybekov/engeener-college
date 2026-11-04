@@ -1,0 +1,537 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration | Engineering College</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+                ENGINEERING<span>COLLEGE</span>
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="admissions.html">Admissions</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="student-life.html">Student Life</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+                <a href="registration.html"
+                    class="btn btn-primary ms-lg-3"
+                    aria-current="page">
+                    Apply Now
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container">
+
+            <p class="section-label">YOUR FUTURE STARTS HERE</p>
+
+            <h1>Student <span>Registration</span></h1>
+
+            <p>Take the next step towards your engineering career.</p>
+
+        </div>
+    </header>
+
+
+    <!-- Registration Form -->
+    <section class="registration-section">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-9">
+
+                    <div class="registration-wrapper">
+
+                        <div class="text-center mb-5">
+
+                            <p class="section-label">APPLICATION FORM</p>
+
+                            <h2>Join Engineering College</h2>
+
+                            <p>
+                                Please complete all required fields
+                                to submit your application.
+                            </p>
+
+                        </div>
+
+
+                        <form id="registrationForm" novalidate>
+
+                            <!-- Personal Information -->
+
+                            <h3 class="form-section-title">
+                                01. Personal Information
+                            </h3>
+
+                            <div class="row g-3">
+
+                                <div class="col-md-6">
+
+                                    <label for="fullName" class="form-label">
+                                        Full Name *
+                                    </label>
+
+                                    <input type="text"
+                                        class="form-control"
+                                        id="fullName"
+                                        placeholder="Enter your full name"
+                                        autocomplete="name"
+                                        required
+                                        minlength="2">
+
+                                    <div class="invalid-feedback">
+                                        Please enter your full name.
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label for="regEmail" class="form-label">
+                                        Email Address *
+                                    </label>
+
+                                    <input type="email"
+                                        class="form-control"
+                                        id="regEmail"
+                                        placeholder="example@email.com"
+                                        autocomplete="email"
+                                        required>
+
+                                    <div class="invalid-feedback">
+                                        Please enter a valid email address.
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label for="phone" class="form-label">
+                                        Phone Number *
+                                    </label>
+
+                                    <input type="tel"
+                                        class="form-control"
+                                        id="phone"
+                                        placeholder="+996 700 123 456"
+                                        autocomplete="tel"
+                                        required
+                                        pattern="[0-9+() -]{7,20}">
+
+                                    <div class="invalid-feedback">
+                                        Please enter a valid phone number.
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label for="program" class="form-label">
+                                        Desired Program *
+                                    </label>
+
+                                    <select class="form-select"
+                                        id="program"
+                                        required>
+
+                                        <option value="">Choose a program</option>
+                                        <option>Computer Science</option>
+                                        <option>Cyber Security</option>
+                                        <option>Software Engineering</option>
+                                        <option>Electrical Engineering</option>
+                                        <option>Network Engineering</option>
+                                        <option>Artificial Intelligence</option>
+
+                                    </select>
+
+                                    <div class="invalid-feedback">
+                                        Please select a program.
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Study Information -->
+
+                            <h3 class="form-section-title mt-5">
+                                02. Study Information
+                            </h3>
+
+                            <div class="mb-4">
+
+                                <label class="form-label d-block">
+                                    Study Mode *
+                                </label>
+
+                                <div class="study-options">
+
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                            type="radio"
+                                            name="studyMode"
+                                            id="onCampus"
+                                            value="On-campus"
+                                            required>
+
+                                        <label class="form-check-label"
+                                            for="onCampus">
+                                            On-campus
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                            type="radio"
+                                            name="studyMode"
+                                            id="online"
+                                            value="Online"
+                                            required>
+
+                                        <label class="form-check-label"
+                                            for="online">
+                                            Online
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                                <div class="invalid-feedback" id="studyError">
+                                    Please select a study mode.
+                                </div>
+
+                            </div>
+
+
+                            <div class="row g-3">
+
+                                <div class="col-md-6">
+
+                                    <label for="intake" class="form-label">
+                                        Intended Intake *
+                                    </label>
+
+                                    <input type="date"
+                                        class="form-control"
+                                        id="intake"
+                                        required>
+
+                                    <div class="invalid-feedback">
+                                        Please select an intended intake date.
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label for="scholarship" class="form-label">
+                                        Scholarship Interest
+                                    </label>
+
+                                    <select class="form-select" id="scholarship">
+
+                                        <option value="No preference">
+                                            No preference
+                                        </option>
+
+                                        <option value="Yes">
+                                            Yes, I am interested
+                                        </option>
+
+                                        <option value="No">
+                                            No, thank you
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Security -->
+
+                            <h3 class="form-section-title mt-5">
+                                03. Account Security
+                            </h3>
+
+                            <div class="row g-3">
+
+                                <div class="col-md-6">
+
+                                    <label for="password" class="form-label">
+                                        Password *
+                                    </label>
+
+                                    <input type="password"
+                                        class="form-control"
+                                        id="password"
+                                        placeholder="At least 8 characters"
+                                        autocomplete="new-password"
+                                        minlength="8"
+                                        required>
+
+                                    <div class="invalid-feedback">
+                                        Password must contain at least 8 characters.
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label for="confirmPassword" class="form-label">
+                                        Confirm Password *
+                                    </label>
+
+                                    <input type="password"
+                                        class="form-control"
+                                        id="confirmPassword"
+                                        placeholder="Repeat your password"
+                                        autocomplete="new-password"
+                                        required>
+
+                                    <div class="invalid-feedback">
+                                        Passwords do not match.
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Agreement -->
+
+                            <div class="terms-box mt-4">
+
+                                <div class="form-check">
+
+                                    <input class="form-check-input"
+                                        type="checkbox"
+                                        id="terms"
+                                        required>
+
+                                    <label class="form-check-label"
+                                        for="terms">
+
+                                        I agree to the terms and conditions
+                                        and privacy policy. *
+
+                                    </label>
+
+                                    <div class="invalid-feedback">
+                                        You must accept the terms to continue.
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Submit -->
+
+                            <button type="submit"
+                                class="btn btn-primary btn-lg w-100 mt-4">
+
+                                Submit Application
+
+                            </button>
+
+
+                            <div id="registrationFeedback"
+                                class="mt-4"
+                                role="status"
+                                aria-live="polite"></div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <p class="section-label">HAVE QUESTIONS?</p>
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our college.</p>
+            </div>
+
+            <div class="faq-container">
+
+                <div class="faq-item">
+                    <button class="faq-question"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="faqAnswer1">
+                        What programs does Engineering College offer?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+
+                    <div class="faq-answer" id="faqAnswer1" hidden>
+                        <p>
+                            We offer Computer Science, Cyber Security,
+                            Software Engineering, Electrical Engineering,
+                            Network Engineering and Artificial Intelligence.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+                    <button class="faq-question"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="faqAnswer2">
+                        How can I apply for admission?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+
+                    <div class="faq-answer" id="faqAnswer2" hidden>
+                        <p>
+                            Visit our Registration page, complete the
+                            application form and follow the admission steps.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+                    <button class="faq-question"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="faqAnswer3">
+                        Can I study online?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+
+                    <div class="faq-answer" id="faqAnswer3" hidden>
+                        <p>
+                            Our demonstration registration form includes
+                            both online and on-campus study options.
+                            Actual availability should be confirmed
+                            with the admissions office.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+                    <button class="faq-question"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="faqAnswer4">
+                        How can I contact the college?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+
+                    <div class="faq-answer" id="faqAnswer4" hidden>
+                        <p>
+                            Visit our Contact page to find contact
+                            information and complete the contact form.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+                    <button class="faq-question"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="faqAnswer5">
+                        Where can I find tuition information?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+
+                    <div class="faq-answer" id="faqAnswer5" hidden>
+                        <p>
+                            Visit the Admissions page to view our
+                            illustrative tuition fee table.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>© 2026 Engineering College. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

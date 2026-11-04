@@ -1,0 +1,688 @@
+:root {
+    --primary: #0b1f3a;
+    --secondary: #12345a;
+    --accent: #38bdf8;
+    --light: #f4f7fb;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--light);
+    color: #172033;
+}
+
+/* Navigation */
+
+.navbar {
+    background: var(--primary);
+    padding: 18px 0;
+}
+
+.navbar-brand {
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+
+.navbar-brand span {
+    color: var(--accent);
+    margin-left: 5px;
+}
+
+.nav-link {
+    color: #dce6f2 !important;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent) !important;
+}
+
+.btn-primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background: #0ea5e9;
+    border-color: #0ea5e9;
+    color: white;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 700px;
+    background: linear-gradient(
+        90deg,
+        #0b1f3a 0%,
+        #12345a 65%,
+        #16436c 100%
+    );
+
+    display: flex;
+    align-items: center;
+    padding: 120px 0 80px;
+    color: white;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero-label,
+.section-label {
+    color: var(--accent);
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 8vw, 85px);
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 25px 0;
+}
+
+.hero h1 span {
+    color: var(--accent);
+}
+
+.hero-description {
+    color: #d0dbea;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* About */
+
+.about-section {
+    padding: 100px 0;
+}
+
+.about-section h2,
+.features-section h2 {
+    font-size: 38px;
+    font-weight: 800;
+    margin: 15px 0 25px;
+}
+
+.about-section p {
+    line-height: 1.8;
+}
+
+.info-card {
+    background: var(--primary);
+    color: white;
+    padding: 45px;
+    border-radius: 15px;
+    border-left: 5px solid var(--accent);
+}
+
+.info-card p {
+    color: #d0dbea;
+}
+
+.text-link {
+    color: #087eae;
+    font-weight: bold;
+}
+
+/* Features */
+
+.features-section {
+    background: #e8eef6;
+    padding: 90px 0;
+}
+
+.feature-card {
+    background: white;
+    padding: 35px;
+    height: 100%;
+    border-radius: 12px;
+    transition: 0.3s;
+    border: 1px solid #dce4ef;
+}
+
+.feature-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(11, 31, 58, 0.12);
+}
+
+.feature-card h3 {
+    color: var(--accent);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.feature-card h4 {
+    margin: 20px 0 12px;
+    font-weight: bold;
+}
+
+/* Footer */
+
+.footer {
+    background: var(--primary);
+    color: #cbd5e1;
+    padding: 25px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 620px;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .about-section h2,
+    .features-section h2 {
+        font-size: 30px;
+    }
+
+    .info-card {
+        padding: 30px;
+    }
+}
+
+/* About Page */
+
+.page-header {
+    background: linear-gradient(120deg, #0b1f3a, #16436c);
+    color: white;
+    padding: 180px 0 90px;
+}
+
+.page-header h1 {
+    font-size: clamp(36px, 6vw, 60px);
+    font-weight: 800;
+    margin: 20px 0;
+}
+
+.page-header h1 span {
+    color: var(--accent);
+}
+
+.page-header p:last-child {
+    color: #d0dbea;
+    font-size: 18px;
+}
+
+/* Admissions Page */
+
+.fees-section {
+    padding: 90px 0;
+    background: var(--light);
+}
+
+.fees-section h2 {
+    font-size: 38px;
+    font-weight: 800;
+    margin: 15px 0;
+}
+
+.fees-table {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(11, 31, 58, 0.08);
+}
+
+.fees-table thead th {
+    background: var(--primary);
+    color: white;
+    padding: 20px;
+    border: none;
+}
+
+.fees-table tbody td {
+    padding: 20px;
+    vertical-align: middle;
+}
+
+.fees-table tbody tr:hover {
+    background: #e8f6fc;
+}
+
+.fees-note {
+    color: #64748b;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+@media (max-width: 576px) {
+    .fees-section h2 {
+        font-size: 30px;
+    }
+
+    .fees-table thead th,
+    .fees-table tbody td {
+        padding: 12px;
+        font-size: 13px;
+    }
+}
+
+/* Student Life Page */
+
+.news-card {
+    height: 100%;
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #dce4ef;
+    transition: 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(11, 31, 58, 0.12);
+}
+
+.news-visual {
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-visual span {
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.visual-blue {
+    background: linear-gradient(135deg, #0b1f3a, #2563a6);
+}
+
+.visual-cyan {
+    background: linear-gradient(135deg, #075985, #38bdf8);
+}
+
+.visual-purple {
+    background: linear-gradient(135deg, #312e81, #6366f1);
+}
+
+.news-content {
+    padding: 25px;
+}
+
+.news-category {
+    color: #0284c7;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.news-content h3 {
+    font-size: 21px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.news-content p {
+    color: #64748b;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* News Filters */
+
+.filter-btn {
+    border: 1px solid #0b1f3a;
+    background: transparent;
+    color: #0b1f3a;
+    padding: 10px 22px;
+    margin: 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #0b1f3a;
+    color: white;
+}
+
+.news-item[hidden] {
+    display: none !important;
+}
+
+/* Keyboard accessibility */
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #38bdf8;
+    outline-offset: 4px;
+}
+
+@media (max-width: 576px) {
+    .news-visual {
+        height: 160px;
+    }
+
+    .news-content {
+        padding: 20px;
+    }
+
+    .filter-btn {
+        padding: 9px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Contact Page */
+
+.contact-section {
+    padding: 90px 0;
+    background: var(--light);
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.contact-card {
+    background: white;
+    border: 1px solid #dce4ef;
+    border-radius: 14px;
+    padding: 35px 20px;
+    text-align: center;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(11, 31, 58, 0.1);
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    background: #e0f2fe;
+    color: #0284c7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin: 0 auto 20px;
+}
+
+.contact-card h3 {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.contact-card p {
+    color: #64748b;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.contact-form-wrapper {
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 8px 30px rgba(11, 31, 58, 0.08);
+}
+
+.contact-form-wrapper h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.contact-form-wrapper > p {
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+.contact-form-wrapper .form-control {
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+}
+
+.contact-form-wrapper .form-control:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+.contact-form-wrapper .form-label {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.honeypot {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+#contactFeedback {
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+@media (max-width: 576px) {
+
+    .contact-form-wrapper {
+        padding: 25px 18px;
+    }
+
+    .contact-section h2 {
+        font-size: 28px;
+    }
+
+    .contact-card {
+        padding: 25px 15px;
+    }
+
+}
+
+/* Registration Page */
+
+.registration-section {
+    padding: 90px 0;
+    background: var(--light);
+}
+
+.registration-wrapper {
+    background: white;
+    border-radius: 18px;
+    padding: 45px;
+    box-shadow: 0 10px 35px rgba(11, 31, 58, 0.08);
+}
+
+.registration-wrapper h2 {
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.registration-wrapper > .text-center p:last-child {
+    color: #64748b;
+}
+
+.form-section-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--primary);
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.registration-wrapper .form-label {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.registration-wrapper .form-control,
+.registration-wrapper .form-select {
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+}
+
+.registration-wrapper .form-control:focus,
+.registration-wrapper .form-select:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+.study-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    background: #f4f7fb;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+.study-options .form-check-label,
+.terms-box .form-check-label {
+    cursor: pointer;
+}
+
+.terms-box {
+    background: #f4f7fb;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#registrationFeedback {
+    line-height: 1.7;
+}
+
+.registration-success {
+    background: #dcfce7;
+    border: 1px solid #86efac;
+    color: #166534;
+    padding: 22px;
+    border-radius: 12px;
+}
+
+@media (max-width: 576px) {
+
+    .registration-wrapper {
+        padding: 25px 18px;
+    }
+
+    .registration-wrapper h2 {
+        font-size: 27px;
+    }
+
+    .form-section-title {
+        font-size: 19px;
+    }
+
+}
+
+/* FAQ Section */
+
+.faq-section {
+    padding: 90px 0;
+    background: white;
+}
+
+.faq-section h2 {
+    font-size: 38px;
+    font-weight: 800;
+    margin: 15px 0;
+}
+
+.faq-container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border: 1px solid #dce4ef;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    background: #f8fafc;
+}
+
+.faq-question {
+    width: 100%;
+    border: none;
+    background: transparent;
+    padding: 22px;
+    text-align: left;
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.faq-question:hover {
+    color: #0284c7;
+}
+
+.faq-icon {
+    font-size: 25px;
+    color: #0284c7;
+    flex-shrink: 0;
+}
+
+.faq-answer {
+    padding: 0 22px 20px;
+    color: #64748b;
+    line-height: 1.8;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+@media (max-width: 576px) {
+    .faq-section h2 {
+        font-size: 29px;
+    }
+
+    .faq-question {
+        font-size: 15px;
+        padding: 18px;
+    }
+}
